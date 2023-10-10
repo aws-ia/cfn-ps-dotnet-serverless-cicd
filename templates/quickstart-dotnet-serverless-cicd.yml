@@ -4,7 +4,7 @@ Parameters:
   GitHubRepositoryName:
     Type: String
     Description: GitHub repository name
-    Default: quickstart-dotnet-serverless-cicd
+    Default: cfn-ps-dotnet-serverless-cicd
   GitHubBranchName:
     Type: String
     Description: GitHub branch name
@@ -27,7 +27,7 @@ Parameters:
     ConstraintDescription: This string can include numbers, lowercase
       letters, uppercase letters, and hyphens (-). It cannot start or end with a hyphen
       (-).
-    Default: aws-quickstart
+    Default: aws-ia-us-east-1
     Description: S3 bucket name for the Quick Start assets. This name
       can include numbers, lowercase letters, uppercase letters, and hyphens (-).
       It cannot start or end with a hyphen (-).
@@ -40,13 +40,13 @@ Parameters:
     AllowedPattern: ^[0-9a-zA-Z-/]*$
     ConstraintDescription: Can include numbers, lowercase letters,
       uppercase letters, hyphens (-), and forward slash (/).
-    Default: quickstart-dotnet-serverless-cicd/
+    Default: cfn-ps-dotnet-serverless-cicd/
     Description: S3 key prefix for the Quick Start assets. This prefix
       can include numbers, lowercase letters, uppercase letters, hyphens (-), and
       forward slash (/).
     Type: String
 Conditions:
-  UsingDefaultBucket: !Equals [!Ref QSS3BucketName, 'aws-quickstart']
+  UsingDefaultBucket: !Equals [!Ref QSS3BucketName, 'aws-ia-us-east-1']
 Resources:
   CodeBuildProject:
     Type: AWS::CodeBuild::Project
