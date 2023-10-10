@@ -1,5 +1,5 @@
 project:
-  name: quickstart-dotnet-serverless-cicd
+  name: cfn-ps-dotnet-serverless-cicd
   owner: quickstart-eng@amazon.com
   package_lambda: false
   regions:
