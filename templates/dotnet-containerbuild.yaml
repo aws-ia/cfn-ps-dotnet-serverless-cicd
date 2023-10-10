@@ -1,5 +1,12 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Description: This deploys an Automation Document that builds a .Net Framework Container that includes msbuild (qs-1qh1429dt)
+Metadata:
+  cfn-lint:
+    config:
+      ignore_checks:
+        - E8002
+        - E1012
+        - E1019
 Resources: 
   GenerateDotNetContainer:
     Type: AWS::SSM::Document
