@@ -1,4 +1,8 @@
 # quickstart-dotnet-serverless-cicd
+## Deprecation Notice
+
+:x: This repository is subject to deprecation in Q4 2024. For more details, [please review this announcement](https://github.com/aws-ia/.announcements/issues/1). 
+
 ## .NET Serverless CI/CD on the AWS Cloud
 
 .NET Framework is a managed execution environment for applications that provides memory management, class libraries, versioning, and other software development tools.
